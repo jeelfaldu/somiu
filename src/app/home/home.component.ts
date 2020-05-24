@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   copyID(item){
     document.addEventListener('copy', (e: ClipboardEvent) => {
       e.clipboardData.setData('text/plain', (item));
