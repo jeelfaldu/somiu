@@ -1,0 +1,155 @@
+<header id="header-wrap">
+  <div id="hero-area" class="hero-area-bg">
+    <div class="overlay"></div>
+    <div class="container ">
+      <div class="row">
+        <div class="contents">
+          <div class="script-font wow fadeInUp " data-wow-delay="0.2s">
+            <div class="  mb-3 ">
+              <img src="../assets/propic.jpg" class="col-sm-12  col-md-6 z-depth-1 ">
+            </div>
+          </div>
+          <h2 class="head-title wow fadeInUp " data-wow-delay="0.4s">{{userData.username}}</h2>
+          <p class="script-font wow fadeInUp " data-wow-delay="0.6s">Front-end Web Developer and Graphic Designer</p>
+          <ul class="row wow fadeInUp" data-wow-delay="0.8s">
+             <li class="col-sm-11 col-md-3 m-1 ">
+              <div>
+                <div class="card ">
+                  <div class="card-body text-center ">
+                    <h5 class="card-title "><i class="fa fa-facebook-official fa-3x" style="color:#3b5998  ;"
+                        aria-hidden="true"></i></h5>
+                    <a href="https://www.facebook.com/{{userData.fbUrl}}" target="_blink" class="card-link">/{{userData.fbUrl}}</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-11 col-md-3 m-1">
+              <div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h5 class="card-title "><i class="fa fa-snapchat-square fa-3x" style="color: #fffc00 ;"
+                        aria-hidden="true"></i></h5>
+                    <a href="https://www.snapchat.com/add/{{userData.snapid}}" target="_blink" class="card-link">/{{userData.snapid}}</a>
+                  </div>
+                </div>
+              </div>
+            <li class="col-sm-11 col-md-3 m-1">
+              <div>
+                <div class="card">
+                  <div class="card-body text-center ">
+                    <h5 class="card-title "><i class="fa fa-instagram fa-3x instagram" aria-hidden="true"></i></h5>
+                    <a href="https://www.instagram.com/{{userData.ig}}/?hl=en" target="_blink" class="card-link">/{{userData.ig}}</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-11 col-md-3 m-1">
+              <div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h5 class="card-title "><i class="fa fa-whatsapp fa-3x" style="color:#4FCE5D;"
+                        aria-hidden="true"></i></h5>
+                    <a href= "https://api.whatsapp.com/send?phone={{userData.wpnum}}" target="_blink" class="card-link">/{{userData.wpnum}}</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-11 col-md-3 m-1">
+              <div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h5 class="card-title "><i class="fa fa-linkedin-square fa-3x" style="color:#0e76a8;" aria-hidden="true"></i>
+                    </h5>
+                    <a href="https://www.linkedin.com/in/{{userData.linkedin}}" target="_blink" class="card-link">/{{userData.linkedin}}</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-11 col-md-3 m-1">
+              <div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h5 class="card-title fa-4x"><img
+                        src="https://logo-logos.com/wp-content/uploads/2018/03/PUBG_icon_black_small.png"
+                        style="width: 128px; height: 150px;" alt="PUBG logo" />
+                    </h5>
+                    <a  class="card-link text-primary" (click)="copyID(userData.pubg)">/{{userData.pubg}}</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="header-button wow fadeInUp" data-wow-delay="1s">
+            <a href="#" class="btn btn-common">Share</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+
+<!--
+<div class="row bg-secondary d-flex flex-auto m-0 p-0 ">
+  <div class=" col-lg-4 col-md-6 col-sm-12 mb-3 ">
+    <img src="../assets/propic.jpg" class=" img-fluid z-depth-1">
+  </div>
+  <div class="row">
+    <div class="col-sm-11 col-md-3 m-1">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title "><i class="fa fa-facebook-official fa-4x" style="color:#3b5998  ;"
+              aria-hidden="true"></i></h5>
+          <a href="https://www.facebook.com/jeel.faldu.7" target="_blink" class="card-link">/jeel.faldu.7</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-11 col-md-3 m-1">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title "><i class="fa fa-snapchat-square fa-4x" style="color: #fffc00 ;"
+              aria-hidden="true"></i></h5>
+          <a href="https://www.snapchat.com/add/jf_9808" target="_blink" class="card-link">/jf_9808</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-11 col-md-3 m-1">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title "><img src="../assets/img/insta.png"></h5>
+          <a href="https://www.snapchat.com/add/jf_9808" target="_blink" class="card-link">/jf_9808</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-11 col-md-3 m-1">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title "><i class="fa fa-whatsapp fa-4x" style="color:#4FCE5D;" aria-hidden="true"></i></h5>
+          <a href="https://www.snapchat.com/add/jf_9808" target="_blink" class="card-link">/jf_9808</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-11 col-md-3 m-1">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title "><i class="fa fa-linkedin-square fa-4x" style="color:#0e76a8;" aria-hidden="true"></i>
+          </h5>
+          <a href="https://www.snapchat.com/add/jf_9808" target="_blink" class="card-link">/jf_9808</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-11 col-md-3 m-1">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title "><img src="../assets/img/pubg.png"></h5>
+          <a href="#" class="card-link" (click)="copyID('7894')">/jf_9808</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-primary ">Share</button>
+  </div>
+</div>-->
