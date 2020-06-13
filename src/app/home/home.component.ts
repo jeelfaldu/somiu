@@ -36,4 +36,14 @@ export class HomeComponent implements OnInit {
     });
     document.execCommand('copy');
   }
+  share(){
+
+    document.addEventListener('copy', (e: ClipboardEvent) => {
+      e.clipboardData.setData('text/plain', ("https://somiu.stackblitz.io/u/vsLwssqwxNgS2lOL8iEbDK6dRzn2"));
+      e.preventDefault();
+      document.removeEventListener('copy', null);
+    });
+    document.execCommand('copy');
+
+  }
 }
