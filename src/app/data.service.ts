@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
   private headers = new HttpHeaders().set('Content-Type', 'application/json');
-  private _url = "http://localhost:3000/";
+  private _url = "https://crudaip.herokuapp.com/";
   constructor(private _http: HttpClient) { }
 
   public UserData(id){
-    return this._http.get<any>(this._url+"userdata/"+id,{headers:this.headers});
+    return this._http.get<any>("https://crudaip.herokuapp.com/usredata/"+,{headers:this.headers});
   }
 }
