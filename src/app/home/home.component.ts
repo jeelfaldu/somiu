@@ -10,6 +10,7 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
   userID;
   userData;
+  imgUrl = "https://cdn.jsdelivr.net/gh/jeelfaldu/somiu@master/src/assets/propic.jpg";
   constructor(private activatedRoute : ActivatedRoute,private dataService : DataService) { 
     this.userID = {"id":this.activatedRoute.snapshot.paramMap.get('id')}
     console.log(this.userID);
