@@ -12,20 +12,19 @@ export class HomeComponent implements OnInit {
   userData;
   imgUrl = "https://cdn.jsdelivr.net/gh/jeelfaldu/somiu@master/src/assets/propic.jpg";
   constructor(private activatedRoute : ActivatedRoute,private dataService : DataService) { 
-    this.userID = {"id":this.activatedRoute.snapshot.paramMap.get('id')}
-    console.log(this.userID);
-    
+   this.userID = {"id":this.activatedRoute.snapshot.paramMap.get('id')}
+    console.log(this.userID);    
       this.dataService.UserData(this.activatedRoute.snapshot.paramMap.get('id')).subscribe((mydata : any[])=>{
         this.userData = mydata['msg'][0]
         console.log(this.userData);
-      });
-        
-        
+      });   
         
     
   }
 
   ngOnInit(): void {
+      
+        
   }
   
   copyID(item){
